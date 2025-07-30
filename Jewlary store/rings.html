@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>תכשיטי יוקרה - טבעות</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/rings.css" />
+  <link rel="stylesheet" href="styles/iframeStyle.css" />
+  <script>
+    function toggleBtnText(buttonId) {
+      var buttonRef = document.getElementById(buttonId);
+      if (buttonRef.innerText == "הוסף לסל הקניות") {
+        buttonRef.innerText = "הסר מעגלה";
+      } else {
+        buttonRef.innerText = "הוסף לסל הקניות";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="Pictures/logo.jpg" class="logo" />
+      <h1>אילנו תכשיטי יוקרה</h1>
+    </header>
+
+    <iframe src="navbar.html" class="navbar-frame"></iframe>
+
+    <main>
+      <h2>קולקציית הטבעות שלנו</h2>
+      <div class="rings-grid">
+        <div class="ring-item">
+          <img src="Pictures/Rings/ring12.jpeg" />
+          <h3>טבעת יהלום מרכזי</h3>
+          <p class="price">₪5,999</p>
+          <button id="addToCart12" onclick="toggleBtnText('addToCart12')" class="buy-btn">
+            הוסף לסל הקניות
+          </button>
+        </div>
+        <div class="ring-item">
+          <img src="Pictures/Rings/ring13.jpeg" />
+          <h3>טבעת יהלומים מעוצבת</h3>
+          <p class="price">₪4,499</p>
+          <button id="addToCart13" onclick="toggleBtnText('addToCart13')" class="buy-btn">
+            הוסף לסל הקניות
+          </button>
+        </div>
+        <div class="ring-item">
+          <img src="Pictures/Rings/ring2.jpeg" />
+          <h3>טבעת אירוסין קלאסית</h3>
+          <p class="price">₪7,999</p>
+          <button id="addToCart14" onclick="toggleBtnText('addToCart14')" class="buy-btn">
+            הוסף לסל הקניות
+          </button>
+        </div>
+        <div class="ring-item">
+          <img src="Pictures/Rings/ring14.jpeg" />
+          <h3>טבעת זהב צהוב</h3>
+          <p class="price">₪2,999</p>
+          <button id="addToCart15" onclick="toggleBtnText('addToCart15')" class="buy-btn">
+            הוסף לסל הקניות
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <aside class="left">
+      <h3>מבצעים מיוחדים</h3>
+      <p>הנחה של 10% על כל השרשראות</p>
+      <p>קולקציה חדשה של שרשראות</p>
+    </aside>
+    <aside class="right">
+      <h3>מבצעים מיוחדים</h3>
+      <p>הנחה של 10% על כל הטבעות</p>
+      <p>קולקציה חדשה של צמידים</p>
+      </br>
+      <ul>
+        <li>מבצעים והנחות</li>
+        <li>50% לחיילים</li>
+        <li>30% לסטודנטים</li>
+      </ul>
+    </aside>
+    <footer>
+      <p>כל הזכויות שמורות © 2025 אילנו תכשיטי יוקרה</p>
+    </footer>
+  </div>
+</body>
+
+</html>
